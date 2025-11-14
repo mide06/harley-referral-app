@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings - Harley Innovation Hub</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar" id="sidebar">
+            <div class="logo">
+                <h2>Harley Innovation Hub</h2>
+            </div>
+            <nav class="nav-menu">
+                <a href="dashboard.html" class="nav-item">
+                    <span>Dashboard</span>
+                </a>
+                <a href="referrals.html" class="nav-item">
+                    <span>Referrals</span>
+                </a>
+                <a href="settings.html" class="nav-item active">
+                    <span>Settings</span>
+                </a>
+                <a href="login.html" class="nav-item">
+                    <span>Logout</span>
+                </a>
+            </nav>
+        </aside>
+
+        <div class="mobile-header">
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <h2>Harley Innovation Hub</h2>
+        </div>
+
+        <main class="main-content">
+            <div class="welcome-section">
+                <h1>Settings</h1>
+            </div>
+
+            <div class="settings-form-section">
+                <form class="settings-form" onsubmit="handleSettingsUpdate(event)">
+                    <div class="form-group">
+                        <label for="fullName">Full Name</label>
+                        <input type="text" id="fullName" name="fullName" value="John Doe" readonly>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" value="john.doe@example.com" readonly>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">New Password</label>
+                        <input type="password" id="password" name="password" placeholder="Enter new password">
+                        <small class="hint">Leave blank to keep your existing password. Must be at least 6 characters.</small>
+                    </div>
+
+                    <button type="submit" class="update-btn">Update</button>
+                </form>
+            </div>
+
+            <footer class="footer">
+                <p>&copy; 2025 Fortune / Farouk | All rights reserved</p>
+            </footer>
+        </main>
+    </div>
+
+    <script src="dashboard.js"></script>
+        <script>
+            // Populate settings form with current user data
+            async function loadSettings() {
+                const token = localStorage.getItem('token');
+                if (!token) return window.location.href = 'login.html';
+
+                try {
+                    const res = await fetch('http://localhost:3000/api/auth/me', {
+                        headers: { Authorization: `Bearer ${token}` },
+                    });
+                    const data = await res.json();
+                    if (!data.success) return window.location.href = 'login.html';
+
+                    document.getElementById('fullName').value = data.user.name || '';
+                    document.getElementById('email').value = data.user.email || '';
+                } catch (err) {
+                    console.error('Error loading settings:', err);
+                    window.location.href = 'login.html';
+                }
+            }
+
+            async function handleSettingsUpdate(e) {
+                e.preventDefault();
+                const token = localStorage.getItem('token');
+                if (!token) return window.location.href = 'login.html';
+
+                        const password = document.getElementById('password').value.trim();
+
+                        if (!password) {
+                            alert('Please enter a new password to update.');
+                            return;
+                        }
+
+                        if (password.length < 6) {
+                            alert('Password must be at least 6 characters long.');
+                            return;
+                        }
+
+                        try {
+                            const res = await fetch('http://localhost:3000/api/auth/update', {
+                                method: 'PUT',
+                                headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${token}` },
+                                body: JSON.stringify({ password }),
+                            });
+                            const data = await res.json();
+                            if (data.success) {
+                                alert('Password updated successfully');
+                                document.getElementById('password').value = '';
+                            } else {
+                                alert(data.message || 'Update failed');
+                            }
+                        } catch (err) {
+                            console.error('Update error:', err);
+                            alert('Unable to connect to server');
+                        }
+            }
+
+            document.addEventListener('DOMContentLoaded', loadSettings);
+        </script>
+</body>
+</html>

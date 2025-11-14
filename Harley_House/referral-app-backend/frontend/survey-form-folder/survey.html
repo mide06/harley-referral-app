@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img1.png" href="favicon.png">
+    <title>harlay hub</title>
+    <!-- Optional: set backend API base here to override auto-detection. Example: http://localhost:3000 -->
+    <meta name="api-base" content="">
+    <link rel="stylesheet" href="./sur.css">
+
+    
+</head>
+<body>
+  <form id="surveyForm">
+    <div class="container">
+      <!-- SECTION 1 -->
+      <div class="container1" id="con1">
+        <div class="header">
+          <h1>Survey <span style="color: blue;">Form</span></h1>
+        </div>
+
+        <div class="input1">
+          <label for="name" class="label1">Full name:</label>
+          <input type="text" name="name" id="name" placeholder="Your full name" required><br><br>
+
+          <label for="email" class="label1">Email:</label>
+          <input type="email" name="email" id="email" required><br><br>
+        </div>
+
+        <div class="button1">
+          <button type="button" id="button1">Next</button>
+        </div>
+        <div id="message" style="margin-top:1rem;color:green;display:none;"></div>
+        <div id="error" style="margin-top:1rem;color:red;display:none;"></div>
+      </div>
+
+      <!-- SECTION 2 -->
+      <div class="container1" id="con2">
+        <h2>General <span style="color: blue;">Information</span></h2>
+
+        <label for="address">Full address of the house (short answer)</label><br><br>
+        <input type="text" name="address" id="text"><br><br>
+
+        <hr>
+
+        <label>Type of House (Multiple Choice)</label><br><br>
+        <input type="radio" name="house_type" value="Flat" class="checkbox">
+        <label>Flat</label><br><br>
+
+        <input type="radio" name="house_type" value="Single-Room" class="checkbox">
+        <label>Single-Room</label><br><br>
+
+        <input type="radio" name="house_type" value="Self Contain" class="checkbox">
+        <label>Self Contain</label><br><br>
+
+        <input type="radio" name="house_type" value="Other" class="checkbox">
+        <label>Other</label><br><br>
+
+        <hr>
+
+        <label>Rent amount</label><br><br>
+        <input type="number" name="rent_amount" id="num"><br><br>
+
+        <hr>
+
+        <label>Payment Terms</label><br><br>
+        <input type="radio" name="payment_method" value="Transfer" class="checkbox">
+        <label>Transfer</label><br><br>
+
+        <input type="radio" name="payment_method" value="Cash" class="checkbox">
+        <label>Cash</label><br><br>
+
+        <hr>
+
+        <label>Available Contact</label><br><br>
+        <input type="radio" name="available_contact" value="Landlord Contact" class="checkbox">
+        <label>Landlord Contact</label><br><br>
+
+        <input type="radio" name="available_contact" value="Caretaker Contact" class="checkbox">
+        <label>Caretaker Contact</label><br><br>
+
+        <div class="np">
+          <div class="previous"><button type="button">Previous</button></div><br>
+          <div class="next"><button type="button">Next</button></div>
+        </div>
+      </div>
+
+      <!-- SECTION 3 -->
+      <div class="container1" id="con3">
+        <h2>Structural and Building Quality</h2>
+
+        <label>Wall Condition (Multiple choice)</label><br><br>
+        <input type="radio" name="wall_condition" value="Good" class="checkbox">
+        <label>Good</label><br>
+
+        <input type="radio" name="wall_condition" value="Minor Cracks" class="checkbox">
+        <label>Minor cracks</label><br>
+
+        <input type="radio" name="wall_condition" value="Major Cracks" class="checkbox">
+        <label>Major cracks</label><br>
+
+        <input type="radio" name="wall_condition" value="Dampness" class="checkbox">
+        <label>Dampness</label><br><br>
+
+        <hr>
+
+        <label>Flooring Type (Multiple choice)</label><br><br>
+        <input type="radio" name="flooring_type" value="Tiles" class="checkbox">
+        <label>Tiles</label><br><br>
+
+        <input type="radio" name="flooring_type" value="Cement" class="checkbox">
+        <label>Cement</label><br><br>
+
+        <input type="radio" name="flooring_type" value="No Flooring" class="checkbox">
+        <label>No Flooring</label><br><br>
+
+        <hr>
+
+        <label>Ceiling Type (Multiple choice)</label><br><br>
+        <input type="radio" name="ceiling_type" value="POP" class="checkbox">
+        <label>POP</label><br>
+
+        <input type="radio" name="ceiling_type" value="PVC" class="checkbox">
+        <label>PVC</label><br>
+
+        <input type="radio" name="ceiling_type" value="Asbestos" class="checkbox">
+        <label>Asbestos</label><br>
+
+        <input type="radio" name="ceiling_type" value="Wood" class="checkbox">
+        <label>Wood</label><br>
+
+        <hr><br>
+
+        <label>Roof Condition:</label><br><br>
+        <input type="radio" name="roof_condition" value="No leaks" class="checkbox">
+        <label>No leaks</label><br>
+
+        <input type="radio" name="roof_condition" value="Minor leaks" class="checkbox">
+        <label>Minor leaks</label><br><br>
+
+        <input type="radio" name="roof_condition" value="Serious leaks" class="checkbox">
+        <label>Serious leaks</label><br><br>
+
+        <hr><br>
+
+        <label>Number of windows (Short answer):</label><br>
+        <input type="text" name="number_of_windows" id="text"><br><br>
+
+        <hr>
+
+        <label>Window Condition:</label><br><br>
+        <input type="radio" name="window_condition" value="Cross ventilation" class="checkbox">
+        <label>Cross ventilation</label><br>
+
+        <input type="radio" name="window_condition" value="Mosquito net" class="checkbox">
+        <label>Mosquito net</label><br>
+
+        <input type="radio" name="window_condition" value="Burglary Proof" class="checkbox">
+        <label>Burglary Proof</label><br>
+
+        <input type="radio" name="window_condition" value="Other" class="checkbox">
+        <label>Other</label><br><br>
+
+        <div class="np">
+          <div class="previous"><button type="button">Previous</button></div><br>
+          <div class="next"><button type="button">Next</button></div>
+        </div>
+      </div>
+        <!-- SECTION 4 -->
+
+          <!-- SECTION 4 -->
+      <div class="container1" id="con4">
+        <h2>Facilities and Amenities</h2>
+
+        <label>Electricity Availability</label><br><br>
+        <input type="radio" name="electricity" value="Stable" class="checkbox">
+        <label>Stable</label><br>
+
+        <input type="radio" name="electricity" value="Unstable" class="checkbox">
+        <label>Unstable</label><br>
+
+        <input type="radio" name="electricity" value="None" class="checkbox">
+        <label>None</label><br><br>
+
+        <hr>
+
+        <label>Water Supply Type</label><br><br>
+        <input type="radio" name="water_supply" value="Borehole" class="checkbox">
+        <label>Borehole</label><br>
+
+        <input type="radio" name="water_supply" value="Well" class="checkbox">
+        <label>Well</label><br>
+
+        <input type="radio" name="water_supply" value="Tap Water" class="checkbox">
+        <label>Tap Water</label><br>
+
+        <input type="radio" name="water_supply" value="None" class="checkbox">
+        <label>None</label><br><br>
+
+        <hr>
+
+        <label>Waste Disposal System</label><br><br>
+        <input type="radio" name="waste_disposal" value="Public collection" class="checkbox">
+        <label>Public collection</label><br>
+
+        <input type="radio" name="waste_disposal" value="Private service" class="checkbox">
+        <label>Private service</label><br>
+
+        <input type="radio" name="waste_disposal" value="Dump site" class="checkbox">
+        <label>Dump site</label><br>
+
+        <input type="radio" name="waste_disposal" value="Burning" class="checkbox">
+        <label>Burning</label><br><br>
+
+        <div class="np">
+          <div class="previous"><button type="button">Previous</button></div><br>
+          <div class="next"><button type="button">Next</button></div>
+        </div>
+      </div>
+
+      <!-- SECTION 5 -->
+      <div class="container1" id="con5">
+        <h2>Safety and Security</h2>
+
+        <label>Neighborhood Safety</label><br><br>
+        <input type="radio" name="neighborhood_safety" value="Very safe" class="checkbox">
+        <label>Very safe</label><br>
+
+        <input type="radio" name="neighborhood_safety" value="Moderately safe" class="checkbox">
+        <label>Moderately safe</label><br>
+
+        <input type="radio" name="neighborhood_safety" value="Unsafe" class="checkbox">
+        <label>Unsafe</label><br><br>
+
+        <hr>
+
+        <label>Presence of Security Measures</label><br><br>
+        <input type="checkbox" name="security_measures[]" value="Fenced compound" class="checkbox">
+        <label>Fenced compound</label><br>
+
+        <input type="checkbox" name="security_measures[]" value="Security guard" class="checkbox">
+        <label>Security guard</label><br>
+
+        <input type="checkbox" name="security_measures[]" value="CCTV" class="checkbox">
+        <label>CCTV</label><br>
+
+        <input type="checkbox" name="security_measures[]" value="Street light" class="checkbox">
+        <label>Street light</label><br>
+
+        <input type="checkbox" name="security_measures[]" value="Neighborhood watch" class="checkbox">
+        <label>Neighborhood watch</label><br><br>
+
+        <hr>
+
+        <label>Accessibility to Road (Short answer)</label><br>
+        <input type="text" name="road_accessibility" id="text"><br><br>
+
+        <div class="np">
+          <div class="previous"><button type="button">Previous</button></div><br>
+          <div class="next"><button type="button">Next</button></div>
+        </div>
+      </div>
+
+      <!-- SECTION 6 -->
+      <div class="container1" id="con6">
+        <h2>Environment and Surrounding</h2>
+
+        <label>Noise Level</label><br><br>
+        <input type="radio" name="noise_level" value="Quiet" class="checkbox">
+        <label>Quiet</label><br>
+
+        <input type="radio" name="noise_level" value="Moderate" class="checkbox">
+        <label>Moderate</label><br>
+
+        <input type="radio" name="noise_level" value="Noisy" class="checkbox">
+        <label>Noisy</label><br><br>
+
+        <hr>
+
+        <label>Drainage Condition</label><br><br>
+        <input type="radio" name="drainage_condition" value="Good" class="checkbox">
+        <label>Good</label><br>
+
+        <input type="radio" name="drainage_condition" value="Blocked" class="checkbox">
+        <label>Blocked</label><br>
+
+        <input type="radio" name="drainage_condition" value="No drainage" class="checkbox">
+        <label>No drainage</label><br><br>
+
+        <hr>
+
+        <label>Proximity to Market/Bus Stop</label><br><br>
+        <input type="radio" name="proximity" value="Very close" class="checkbox">
+        <label>Very close</label><br>
+
+        <input type="radio" name="proximity" value="Moderate distance" class="checkbox">
+        <label>Moderate distance</label><br>
+
+        <input type="radio" name="proximity" value="Far" class="checkbox">
+        <label>Far</label><br><br>
+
+        <div class="np">
+          <div class="previous"><button type="button">Previous</button></div><br>
+          <div class="next"><button type="button">Next</button></div>
+        </div>
+      </div>
+
+           <!-- SECTION 7 -->
+      <div class="container1" id="con7">
+        <h2>Transportation and Accessibility</h2>
+
+        <label>Primary Mode of Transportation</label><br><br>
+        <input type="radio" name="transport_mode" value="Walking" class="checkbox">
+        <label>Walking</label><br>
+
+        <input type="radio" name="transport_mode" value="Motorcycle" class="checkbox">
+        <label>Motorcycle</label><br>
+
+        <input type="radio" name="transport_mode" value="Tricycle" class="checkbox">
+        <label>Tricycle</label><br>
+
+        <input type="radio" name="transport_mode" value="Bus/Taxi" class="checkbox">
+        <label>Bus/Taxi</label><br>
+
+        <input type="radio" name="transport_mode" value="Private car" class="checkbox">
+        <label>Private car</label><br><br>
+
+        <hr>
+
+        <label>Road Condition</label><br><br>
+        <input type="radio" name="road_condition" value="Good" class="checkbox">
+        <label>Good</label><br>
+
+        <input type="radio" name="road_condition" value="Fair" class="checkbox">
+        <label>Fair</label><br>
+
+        <input type="radio" name="road_condition" value="Bad" class="checkbox">
+        <label>Bad</label><br><br>
+
+        <div class="np">
+          <div class="previous"><button type="button">Previous</button></div><br>
+          <div class="next"><button type="button">Next</button></div>
+        </div>
+      </div>
+
+      <!-- SECTION 8 -->
+      <div class="container1" id="con8">
+        <h2>Social and Community</h2>
+
+        <label>Community Relationship</label><br><br>
+        <input type="radio" name="community_relationship" value="Very friendly" class="checkbox">
+        <label>Very friendly</label><br>
+
+        <input type="radio" name="community_relationship" value="Moderate" class="checkbox">
+        <label>Moderate</label><br>
+
+        <input type="radio" name="community_relationship" value="Unfriendly" class="checkbox">
+        <label>Unfriendly</label><br><br>
+
+        <hr>
+
+        <label>Community Development Associations (CDA)</label><br><br>
+        <input type="radio" name="cda_presence" value="Yes" class="checkbox">
+        <label>Yes</label><br>
+
+        <input type="radio" name="cda_presence" value="No" class="checkbox">
+        <label>No</label><br><br>
+
+        <hr>
+
+        <label>Does the community organize regular meetings?</label><br><br>
+        <input type="radio" name="community_meetings" value="Yes" class="checkbox">
+        <label>Yes</label><br>
+
+        <input type="radio" name="community_meetings" value="No" class="checkbox">
+        <label>No</label><br><br>
+
+        <div class="np">
+          <div class="previous"><button type="button">Previous</button></div><br>
+          <div class="next"><button type="button">Next</button></div>
+        </div>
+      </div>
+
+      <!-- SECTION 9 -->
+      <div class="container1" id="con9">
+        <h2>Final Section — Feedback</h2>
+
+        <label>What do you like most about your area?</label><br>
+        <textarea name="area_likes" id="area_likes" rows="3" placeholder="Write your answer here..."></textarea><br><br>
+
+        <label>What problems do you face in your area?</label><br>
+        <textarea name="area_problems" id="area_problems" rows="3" placeholder="Write your answer here..."></textarea><br><br>
+
+        <label>Suggestions for improvement</label><br>
+        <textarea name="suggestions" id="suggestions" rows="3" placeholder="Write your answer here..."></textarea><br><br>
+
+        <div class="np">
+          <div class="previous"><button type="button">Previous</button></div><br>
+                    <div class="next">
+                        <button type="button" id="submitBtn">SUBMIT</button>
+                    </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</body>
+
+   <script>
+// Get reference to the "Yes" button
+const yesButton = document.getElementById("button1");
+
+// Array of container IDs in order
+const containers = [
+    "con1", "con2", "con3", "con4", "con5", "con6", "con7", "con8", "con9"
+];
+
+let currentStep = 0;
+
+// Show con2 when "Yes" is clicked
+yesButton.addEventListener("click", (e) => {
+    e.preventDefault();
+
+    const currentContainer = document.getElementById(containers[currentStep]);
+
+    // Get all required inputs inside current step
+    const requiredFields = currentContainer.querySelectorAll("input[required], select[required], textarea[required]");
+
+    let allFilled = true;
+
+    requiredFields.forEach((field) => {
+        if (!field.value.trim()) {
+            allFilled = false;
+            field.classList.add("error");  // Optional: highlight field
+        } else {
+            field.classList.remove("error");
+        }
+    });
+
+    if (!allFilled) {
+        alert("Please fill all required fields before continuing.");
+        return; // Stop: do NOT move to next step
+    }
+
+    // All good → move to next step
+    currentContainer.style.display = "none";
+    currentStep++;
+    document.getElementById(containers[currentStep]).style.display = "block";
+});
+
+
+// Handle all "Next" buttons
+const nextButtons = document.querySelectorAll(".next button");
+const previous = document.querySelectorAll(".previous button");
+
+nextButtons.forEach((button) => {
+    button.addEventListener("click", (e) => {
+        e.preventDefault(); // prevent accidental form submission
+        if (currentStep < containers.length - 1) {
+            document.getElementById(containers[currentStep]).style.display = "none";
+            currentStep++;
+            document.getElementById(containers[currentStep]).style.display = "block";
+        }
+    });
+});
+
+previous.forEach(btn => {
+    btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        if (currentStep > 0) {
+            document.getElementById(containers[currentStep]).style.display = 'none';
+            currentStep--;
+            document.getElementById(containers[currentStep]).style.display = 'block';
+        }
+    });
+});
+
+
+// ✅ Handle final form submission via the SUBMIT button
+const submitBtn = document.getElementById('submitBtn');
+submitBtn.addEventListener('click', async (e) => {
+    e.preventDefault();
+
+    const name = (document.getElementById('name').value || '').trim();
+    const email = (document.getElementById('email').value || '').trim();
+
+    if (!name || !email) {
+        alert('Please provide name and email before submitting.');
+        return;
+    }
+
+    // Collect all inputs (text, radio, checkbox, select) into a single object
+    const formEl = document.getElementById('surveyForm');
+    const data = {};
+
+    // Helper: get label text next to an input if the input has no value
+    function findLabelText(input) {
+        // try <label for="id"> pattern
+        if (input.id) {
+            const label = formEl.querySelector(`label[for="${input.id}"]`);
+            if (label) return label.textContent.trim();
+        }
+        // fallback: look at the nearest sibling label
+        const siblingLabel = input.parentElement && input.parentElement.querySelector('label');
+        if (siblingLabel) return siblingLabel.textContent.trim();
+        return '';
+    }
+
+    // Process text, email, number, textarea
+    formEl.querySelectorAll('input[type="text"], input[type="email"], input[type="number"], textarea').forEach(inp => {
+        if (inp.name) data[inp.name] = inp.value;
+    });
+
+    // Process selects
+    formEl.querySelectorAll('select').forEach(sel => {
+        if (!sel.name) return;
+        data[sel.name] = sel.options[sel.selectedIndex]?.value || sel.options[sel.selectedIndex]?.text || '';
+    });
+
+    // Process radio groups (grouped by name)
+    const radioNames = new Set(Array.from(formEl.querySelectorAll('input[type="radio"][name]')).map(r => r.name));
+    radioNames.forEach(name => {
+        const checked = formEl.querySelector(`input[type="radio"][name="${name}"]:checked`);
+        if (checked) {
+            data[name] = checked.value || findLabelText(checked) || 'selected';
+        } else {
+            data[name] = null;
+        }
+    });
+
+    // Process checkboxes (could be multiple with same name -> array)
+    const checkboxNames = new Set(Array.from(formEl.querySelectorAll('input[type="checkbox"][name]')).map(c => c.name));
+    checkboxNames.forEach(name => {
+        const boxes = Array.from(formEl.querySelectorAll(`input[type="checkbox"][name="${name}"]`));
+        const checked = boxes.filter(b => b.checked).map(b => b.value || findLabelText(b));
+        data[name] = checked.length === 1 ? checked[0] : checked; // single value or array
+    });
+
+    // include simple form fields captured by FormData as fallback (for any remaining named inputs)
+    const fd = new FormData(formEl);
+    for (const [k, v] of fd.entries()) {
+        if (data[k] === undefined) data[k] = v;
+    }
+
+    // include ref if present
+    const ref = new URLSearchParams(window.location.search).get('ref');
+    if (ref) data.referrerUsername = ref;
+
+    try {
+        submitBtn.disabled = true;
+        // Determine API endpoint. If the current page origin is not the backend (port 3000),
+        // point requests at localhost:3000 where the Express API runs.
+        // Allow overriding API base via meta tag <meta name="api-base" content="http://localhost:3000">
+        const metaApi = document.querySelector('meta[name="api-base"]')?.getAttribute('content')?.trim();
+        let apiBase = '';
+        if (metaApi) {
+            apiBase = metaApi.replace(/\/$/, ''); // strip trailing slash
+        } else {
+            // Default: if the page is served from backend (port 3000), use relative path; otherwise point to localhost:3000
+            apiBase = ((window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') && window.location.port === '3000')
+                ? ''
+                : 'http://localhost:3000';
+        }
+
+        const apiUrl = apiBase + '/api/form/submit';
+
+        console.log('Submitting to', apiUrl);
+        try {
+            console.log('Payload (object):', data);
+            console.log('Payload (json):', JSON.stringify(data, null, 2));
+        } catch (e) { console.log('Payload (string):', String(data)); }
+
+        // Normalize common alternate keys so server receives `name` and `email`
+        if (!data.name) {
+            data.name = data.full_name || data.fullname || data['full-name'] || data['fullName'] || data['Full name'];
+        }
+        if (!data.email) {
+            data.email = data.email_address || data['Email'] || data['emailAddress'];
+        }
+
+        // Defensive check: ensure name and email are present before sending
+        if (!data.name || !data.email) {
+            // Detailed diagnostics
+            const nameEl = document.getElementById('name');
+            const emailEl = document.getElementById('email');
+            const diag = {
+                payload: data,
+                nameElementExists: !!nameEl,
+                nameElementValue: nameEl ? nameEl.value : null,
+                nameElementNameAttr: nameEl ? nameEl.getAttribute('name') : null,
+                emailElementExists: !!emailEl,
+                emailElementValue: emailEl ? emailEl.value : null,
+                emailElementNameAttr: emailEl ? emailEl.getAttribute('name') : null,
+            };
+
+            console.error('Aborting submit: name or email missing in payload', diag);
+
+            // Show diagnostics in a visible panel on the page for easy copy/paste
+            let dbg = document.getElementById('submitDebug');
+            if (!dbg) {
+                dbg = document.createElement('pre');
+                dbg.id = 'submitDebug';
+                dbg.style = 'position:fixed;right:10px;bottom:10px;z-index:9999;background:#fff;border:1px solid #ccc;padding:10px;max-width:400px;max-height:250px;overflow:auto;font-size:12px';
+                document.body.appendChild(dbg);
+            }
+            dbg.textContent = JSON.stringify(diag, null, 2);
+
+            alert('Please provide name and email before submitting. See debug panel for details.');
+            // focus the missing input if possible
+            if (!data.name) document.getElementById('name')?.focus();
+            else if (!data.email) document.getElementById('email')?.focus();
+            submitBtn.disabled = false;
+            return;
+        }
+    const response = await fetch(apiUrl, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(data),
+        });
+
+        // Safely handle empty or non-JSON responses
+        const text = await response.text();
+        let result = {};
+        try {
+            result = text ? JSON.parse(text) : {};
+        } catch (parseErr) {
+            // response wasn't JSON — keep raw text for diagnostics
+            result = { message: text };
+            console.warn('Non-JSON response from server:', text);
+        }
+
+        if (response.ok) {
+            // show a quick success and redirect
+            alert('✅ Survey submitted successfully!');
+            const thankyouUrl = (apiBase || '') + '/thankyou.html' + (ref ? `?ref=${encodeURIComponent(ref)}` : '');
+            window.location.href = thankyouUrl;
+        } else {
+            // Show status and server message for easier debugging
+            const serverMsg = result && result.message ? result.message : text || response.statusText;
+            alert('❌ Error: ' + serverMsg + ' (HTTP ' + response.status + ')');
+            console.error('Server response', { status: response.status, body: text, parsed: result });
+        }
+    } catch (error) {
+        console.error('Error submitting form:', error);
+        alert('⚠️ Failed to connect to server.');
+    } finally {
+        submitBtn.disabled = false;
+    }
+});
+
+
+   
+   </script>
+
+    
+</body>
+</html>

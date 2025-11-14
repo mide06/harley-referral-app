@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Thank you</title>
+  <style>
+    body{font-family: Arial, sans-serif;display:flex;align-items:center;justify-content:center;height:100vh;margin:0;background:#f5f7fb}
+    .card{background:white;padding:2rem;border-radius:8px;box-shadow:0 4px 12px rgba(0,0,0,.08);text-align:center}
+    .card h1{color:orangered}
+    a{display:inline-block;margin-top:1rem;color:blue}
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1 id="title">Thank you!</h1>
+    <p id="message">We appreciate you filling out the survey.</p>
+    <a href="/">Back to home</a>
+  </div>
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const ref = params.get('ref');
+    if (ref) {
+      document.getElementById('message').textContent = `Thanks for responding — referred by ${ref}.`;
+    }
+  </script>
+</body>
+</html>

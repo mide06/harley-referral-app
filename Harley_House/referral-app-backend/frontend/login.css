@@ -1,0 +1,120 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  /* leave extra space at top so fixed logo doesn't overlap centered content */
+  padding-top: 80px;
+  margin: 0;
+}
+
+.login-container {
+  width: 320px;
+  padding: 30px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  margin-bottom: 25px;
+  color: #000;
+  font-weight: bold;
+}
+
+label {
+  display: block;
+  text-align: left;
+  margin-bottom: 5px;
+  color: #f15a3b;
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: none;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  outline: none;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #0a06ff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.login-btn:hover {
+  background-color: #0700cc;
+}
+
+.forgot {
+  display: block;
+  margin-top: 10px;
+  color: #000;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.login {
+    text-decoration: none;
+}
+
+.or {
+  margin: 15px 0 10px;
+  color: #333;
+}
+
+.signup-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #f15a3b;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.signup-btn:hover {
+  background-color: #d94b2e;
+}
+
+.error-message {
+  margin-top: 50px;
+  display: block;
+  color: red;
+  font-size: 12px;
+}
+input:focus {
+  outline: none;
+  border: 1px solid #007bff;
+}
+
+nav {
+  position: fixed;
+  top: 2px;
+  left: 8px;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  z-index: 1000;
+}
+
+.logo img {
+  width: 120px;
+  height: auto;
+  display: block;
+}

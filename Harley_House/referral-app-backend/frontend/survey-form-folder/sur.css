@@ -1,0 +1,363 @@
+      
+      body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    justify-content: center;
+    justify-items: center;
+    
+    
+}
+
+ .container{
+    display: grid;
+    width: 80%;
+    grid-template-columns: 1fr;
+    margin: 5%;
+   
+   
+        }
+.container1{
+            padding: 3rem;
+            background-color:white;
+            box-shadow: 0px 0px 3px;
+            margin: 10px;
+            border-radius: 30px;
+            
+
+}
+.input1{
+    display: flex;
+    justify-content: center;
+    
+}
+.label1{
+    background-color: orangered;
+    margin-left: 10px;
+    padding: 10px;
+    width: 100px;
+    text-align: center;
+    color: white;
+}
+.container input{
+   padding-left: 20px;
+   /* width: 250px; */
+   border: 2px solid blue;
+}
+.input1 input{
+    width: 300px;
+}
+.button1{
+    text-align: center;
+    margin-top:50px ;
+   
+   
+}
+.button1 button:hover{
+    background-color: blue;
+    border: 2px solid orangered;
+}
+.button1 button{
+    width: 100px;
+    height: 30px;
+    margin-left: 20px;
+    background-color: orangered;
+     border: 2px solid blue;
+     color: white;
+     border-radius: 5px;
+     cursor: pointer;
+}
+#con2{
+    display: none;
+}
+#con3{
+    display: none;
+}
+#con4{
+    display: none;
+}
+#con5{
+    display: none;
+}
+#con6{
+    display: none;
+}
+#con7{
+    display: none;
+}
+#con8{
+    display: none;
+}
+#con9{
+    display: none;
+}
+
+#con1 h1{
+    color: orangered;
+    text-align: center;
+}
+#con2 h2{
+    text-align: center;
+    font-size: 2rem;
+    color: orangered;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+#num{
+    border: none;
+    border-bottom: 2px solid black;
+}
+
+#con2 #text{
+    width: 100%;
+    height: 30px;
+}
+#con2 label #label{
+    font-size: 0.5rem;
+}
+
+#con3 h2{
+    text-align: center;
+    font-size: 2rem;
+    color: orangered;
+
+}
+#num{
+    border: none;
+    border-bottom: 2px solid black;
+}
+
+#con3 #text{
+    width: 100%;
+    height: 30px;
+}
+#con3 label #label{
+    font-size: 0.5rem;
+}
+
+#con4 h2{
+    text-align: center;
+    font-size: 2rem;
+    color: orangered;
+
+}
+#num{
+    border: none;
+    border-bottom: 2px solid black;
+}
+
+#con4 #text{
+    width: 100%;
+    height: 30px;
+}
+#con4 label #label{
+    font-size: 0.5rem;
+}
+
+
+#con5 h2{
+    text-align: center;
+    font-size: 2rem;
+    color: orangered;
+
+}
+#num{
+    border: none;
+    border-bottom: 2px solid black;
+}
+
+#con5 #text{
+    width: 100%;
+    height: 30px;
+}
+#con5 label #label{
+    font-size: 0.5rem;
+}
+
+
+#con6 h2{
+    text-align: center;
+    font-size: 2rem;
+    color: orangered;
+
+}
+#num{
+    border: none;
+    border-bottom: 2px solid black;
+}
+
+#con6 #text{
+    width: 100%;
+    height: 30px;
+}
+#con6 label #label{
+    font-size: 0.5rem;
+}
+
+
+
+#con7 h2{
+    text-align: center;
+    font-size: 2rem;
+    color: orangered;
+
+}
+#num{
+    border: none;
+    border-bottom: 2px solid black;
+}
+
+#con7 #text{
+    width: 100%;
+    height: 30px;
+}
+#con7 label #label{
+    font-size: 0.5rem;
+}
+
+
+#con8 h2{
+    text-align: center;
+    font-size: 2rem;
+    color: orangered;
+
+}
+#num{
+    border: none;
+    border-bottom: 2px solid black;
+}
+
+#con8 #text{
+    width: 100%;
+    height: 30px;
+}
+#con8 label #label{
+    font-size: 0.5rem;
+}
+
+
+
+#con9 h2{
+    text-align: center;
+    font-size: 2rem;
+    color: orangered;
+
+}
+#num{
+    border: none;
+    border-bottom: 2px solid black;
+}
+
+
+#con9 label #label{
+    font-size: 0.5rem;
+}
+
+
+
+.next button{
+    width: 100px;
+    height: 30px;
+    background-color: orangered;
+    border: 2px solid blue;
+    border-radius: 5px;
+     color: white;
+     margin-left: 10px;
+}
+
+.next button:hover{
+    background-color: blue;
+    border: 2px solid orangered;
+   
+}
+
+.previous button{
+    width: 100px;
+    height: 30px;
+    background-color: blue;
+    border: 2px solid orangered;
+    border-radius: 5px;
+     color: white;
+}
+
+.previous button:hover{
+    background-color: orangered;
+    border: 2px solid blue;
+   
+}
+
+#submit button{
+    width: 150px;
+    height: 30px;
+    background-color: orangered;
+    border: 2px solid blue;
+    color: white;
+   
+
+}
+
+
+
+#submit button:hover{
+    background-color: blue;
+    border: 2px solid orangered;
+    
+}
+ h2{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        margin-top: -30px;
+    }
+ @media(max-width:768px){
+ label1{
+    font-size: 1rem;
+ }
+ .container1{
+    border-radius: 5px;
+    justify-content: center;
+    justify-items: center;
+   
+ }
+ #con1 .input1{
+    display: block;
+    background-color: white;
+    color: white;
+    
+   
+ }
+ #con1 input{
+    height: 30px;
+ }
+ .label1{
+    background-color: white;
+    color: black;
+    margin-left: -10px;
+}
+.button1{
+    text-align: center;
+    margin-top:10px ;
+   
+   
+}
+.button1 button{
+    margin-top: 5px;
+}
+h1{
+    margin-top:-30px ;
+}
+#con1{
+    justify-content: center;
+    justify-items: center;
+    margin-left: -30px;
+     width: 90%;
+}
+
+
+ }
+ 
+#con1{
+    justify-content: center;
+    justify-items: center;
+}
+.np{
+    display: flex;
+}

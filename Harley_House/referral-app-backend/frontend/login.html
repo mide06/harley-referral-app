@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <nav>
+  <div class="logo">
+      <span><img src="./logo.png" alt="" height="100px"> </span>
+      <span>Harley Innovation Hub</span>
+    </div>
+  </nav>
+  <div class="login-container">
+    <h2>Login</h2>
+
+    <form>
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" placeholder="Enter your email" required>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" placeholder="Enter your password" required>
+
+      <button type="submit" a href="dashboard.html" class="login-btn">Login</button>
+
+      <a href="#" class="forgot">Forgot Password?</a>
+      <p class="or">Or</p>
+      <button type="button" class="signup-btn" onclick="location.href='register.html'">Sign Up</button>
+    </form>
+  </div>
+<script src="auth.js"></script>
+
+</body>
+</html>

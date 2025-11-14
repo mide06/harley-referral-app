@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harley Innovation Hub</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header class="navbar">
+    <div class="logo">
+      <span><img src="./logo.png" alt="" height="100px"> </span>
+      <span>Harley Innovation Hub</span>
+    </div>
+
+     <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <nav class="nav-links">
+      <a href="login.html" class="btn-signup">Account</a>
+    </nav>
+  </header>
+
+  
+  <main class="hero">
+    <h1>Help Build the Future of <br><span>Smart Housing!</span></h1>
+    <p>
+      Join our survey and contribute valuable information about your home or neighborhood. 
+      Your input helps us train a powerful house prediction system that makes real estate 
+      smarter, fairer, and more accurate for everyone. Share your data today together, 
+      we can shape the future of housing intelligence!
+    </p>
+    <a href="login.html" class="btn-start">Start Inspection Form</a>
+  </main>
+
+  
+  <footer class="footer">
+    <p>&copy; 2024 Harley Innovation Hub. All rights reserved.</p>
+    <p>Contact us: <a href="mailto:support@harleyinnovationhub.com">support@harleyinnovationhub.com</a></p>
+    
+  </footer>
+
+   <script>
+  const hamburger = document.getElementById("hamburger");
+  const navLinks = document.querySelector(".nav-links");
+
+  hamburger.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+    hamburger.classList.toggle("open");
+  });
+</script>
+
+
+</body>
+</html>
