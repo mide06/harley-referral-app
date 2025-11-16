@@ -29,7 +29,7 @@
         </aside>
 
         <div class="mobile-header">
-            <button class="hamburger" id="hamburger">
+            <button class="hamburger" id="hamburger" title="Open sidebar menu" aria-label="Open sidebar menu">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -44,9 +44,9 @@
 
             <div class="referral-link-section">
                 <div class="referral-link-box">
-                    <label>Your Referral Link:</label>
+                    <label for="referralLink">Your Referral Link:</label>
                     <div class="link-container">
-                        <input type="text" id="referralLink" value="https://harleyhub.com/form?ref=username" readonly>
+                        <input type="text" id="referralLink" value="https://harleyhub.com/form?ref=username" readonly placeholder="Your referral link" title="Your referral link">
                         <button class="copy-btn" onclick="copyReferralLink()">Copy</button>
                     </div>
                 </div>
@@ -57,7 +57,7 @@
                     <h3 class="referrals-count">24</h3>
                     <p>Referrals Obtained</p>
                 </div>
-                <div class="stat-card" style="background: #f15a3b;">
+                <div class="stat-card stat-card-orange">
                     <h3 class="referrals-count">180</h3>
                     <p>Total Referrals</p>
                 </div>

@@ -40,45 +40,45 @@
         <h2>General <span style="color: blue;">Information</span></h2>
 
         <label for="address">Full address of the house (short answer)</label><br><br>
-        <input type="text" name="address" id="text"><br><br>
+        <input type="text" name="address" id="address"><br><br>
 
         <hr>
 
         <label>Type of House (Multiple Choice)</label><br><br>
-        <input type="radio" name="house_type" value="Flat" class="checkbox">
-        <label>Flat</label><br><br>
+        <input type="radio" name="house_type" value="Flat" class="checkbox" id="house_flat">
+        <label for="house_flat">Flat</label><br><br>
 
-        <input type="radio" name="house_type" value="Single-Room" class="checkbox">
-        <label>Single-Room</label><br><br>
+        <input type="radio" name="house_type" value="Single-Room" class="checkbox" id="house_single">
+        <label for="house_single">Single-Room</label><br><br>
 
-        <input type="radio" name="house_type" value="Self Contain" class="checkbox">
-        <label>Self Contain</label><br><br>
+        <input type="radio" name="house_type" value="Self Contain" class="checkbox" id="house_self">
+        <label for="house_self">Self Contain</label><br><br>
 
-        <input type="radio" name="house_type" value="Other" class="checkbox">
-        <label>Other</label><br><br>
+        <input type="radio" name="house_type" value="Other" class="checkbox" id="house_other">
+        <label for="house_other">Other</label><br><br>
 
         <hr>
 
-        <label>Rent amount</label><br><br>
-        <input type="number" name="rent_amount" id="num"><br><br>
+        <label for="rent_amount">Rent amount</label><br><br>
+        <input type="number" name="rent_amount" id="rent_amount"><br><br>
 
         <hr>
 
         <label>Payment Terms</label><br><br>
-        <input type="radio" name="payment_method" value="Transfer" class="checkbox">
-        <label>Transfer</label><br><br>
+        <input type="radio" name="payment_method" value="Transfer" class="checkbox" id="payment_transfer">
+        <label for="payment_transfer">Transfer</label><br><br>
 
-        <input type="radio" name="payment_method" value="Cash" class="checkbox">
-        <label>Cash</label><br><br>
+        <input type="radio" name="payment_method" value="Cash" class="checkbox" id="payment_cash">
+        <label for="payment_cash">Cash</label><br><br>
 
         <hr>
 
         <label>Available Contact</label><br><br>
-        <input type="radio" name="available_contact" value="Landlord Contact" class="checkbox">
-        <label>Landlord Contact</label><br><br>
+        <input type="radio" name="available_contact" value="Landlord Contact" class="checkbox" id="contact_landlord">
+        <label for="contact_landlord">Landlord Contact</label><br><br>
 
-        <input type="radio" name="available_contact" value="Caretaker Contact" class="checkbox">
-        <label>Caretaker Contact</label><br><br>
+        <input type="radio" name="available_contact" value="Caretaker Contact" class="checkbox" id="contact_caretaker">
+        <label for="contact_caretaker">Caretaker Contact</label><br><br>
 
         <div class="np">
           <div class="previous"><button type="button">Previous</button></div><br>
@@ -91,76 +91,76 @@
         <h2>Structural and Building Quality</h2>
 
         <label>Wall Condition (Multiple choice)</label><br><br>
-        <input type="radio" name="wall_condition" value="Good" class="checkbox">
-        <label>Good</label><br>
+        <input type="radio" name="wall_condition" value="Good" class="checkbox" id="wall_good">
+        <label for="wall_good">Good</label><br>
 
-        <input type="radio" name="wall_condition" value="Minor Cracks" class="checkbox">
-        <label>Minor cracks</label><br>
+        <input type="radio" name="wall_condition" value="Minor Cracks" class="checkbox" id="wall_minor">
+        <label for="wall_minor">Minor cracks</label><br>
 
-        <input type="radio" name="wall_condition" value="Major Cracks" class="checkbox">
-        <label>Major cracks</label><br>
+        <input type="radio" name="wall_condition" value="Major Cracks" class="checkbox" id="wall_major">
+        <label for="wall_major">Major cracks</label><br>
 
-        <input type="radio" name="wall_condition" value="Dampness" class="checkbox">
-        <label>Dampness</label><br><br>
+        <input type="radio" name="wall_condition" value="Dampness" class="checkbox" id="wall_damp">
+        <label for="wall_damp">Dampness</label><br><br>
 
         <hr>
 
         <label>Flooring Type (Multiple choice)</label><br><br>
-        <input type="radio" name="flooring_type" value="Tiles" class="checkbox">
-        <label>Tiles</label><br><br>
+        <input type="radio" name="flooring_type" value="Tiles" class="checkbox" id="floor_tiles">
+        <label for="floor_tiles">Tiles</label><br><br>
 
-        <input type="radio" name="flooring_type" value="Cement" class="checkbox">
-        <label>Cement</label><br><br>
+        <input type="radio" name="flooring_type" value="Cement" class="checkbox" id="floor_cement">
+        <label for="floor_cement">Cement</label><br><br>
 
-        <input type="radio" name="flooring_type" value="No Flooring" class="checkbox">
-        <label>No Flooring</label><br><br>
+        <input type="radio" name="flooring_type" value="No Flooring" class="checkbox" id="floor_none">
+        <label for="floor_none">No Flooring</label><br><br>
 
         <hr>
 
         <label>Ceiling Type (Multiple choice)</label><br><br>
-        <input type="radio" name="ceiling_type" value="POP" class="checkbox">
-        <label>POP</label><br>
+        <input type="radio" name="ceiling_type" value="POP" class="checkbox" id="ceiling_pop">
+        <label for="ceiling_pop">POP</label><br>
 
-        <input type="radio" name="ceiling_type" value="PVC" class="checkbox">
-        <label>PVC</label><br>
+        <input type="radio" name="ceiling_type" value="PVC" class="checkbox" id="ceiling_pvc">
+        <label for="ceiling_pvc">PVC</label><br>
 
-        <input type="radio" name="ceiling_type" value="Asbestos" class="checkbox">
-        <label>Asbestos</label><br>
+        <input type="radio" name="ceiling_type" value="Asbestos" class="checkbox" id="ceiling_asbestos">
+        <label for="ceiling_asbestos">Asbestos</label><br>
 
-        <input type="radio" name="ceiling_type" value="Wood" class="checkbox">
-        <label>Wood</label><br>
+        <input type="radio" name="ceiling_type" value="Wood" class="checkbox" id="ceiling_wood">
+        <label for="ceiling_wood">Wood</label><br>
 
         <hr><br>
 
         <label>Roof Condition:</label><br><br>
-        <input type="radio" name="roof_condition" value="No leaks" class="checkbox">
-        <label>No leaks</label><br>
+        <input type="radio" name="roof_condition" value="No leaks" class="checkbox" id="roof_none">
+        <label for="roof_none">No leaks</label><br>
 
-        <input type="radio" name="roof_condition" value="Minor leaks" class="checkbox">
-        <label>Minor leaks</label><br><br>
+        <input type="radio" name="roof_condition" value="Minor leaks" class="checkbox" id="roof_minor">
+        <label for="roof_minor">Minor leaks</label><br><br>
 
-        <input type="radio" name="roof_condition" value="Serious leaks" class="checkbox">
-        <label>Serious leaks</label><br><br>
+        <input type="radio" name="roof_condition" value="Serious leaks" class="checkbox" id="roof_serious">
+        <label for="roof_serious">Serious leaks</label><br><br>
 
         <hr><br>
 
-        <label>Number of windows (Short answer):</label><br>
-        <input type="text" name="number_of_windows" id="text"><br><br>
+        <label for="number_of_windows">Number of windows (Short answer):</label><br>
+        <input type="text" name="number_of_windows" id="number_of_windows"><br><br>
 
         <hr>
 
         <label>Window Condition:</label><br><br>
-        <input type="radio" name="window_condition" value="Cross ventilation" class="checkbox">
-        <label>Cross ventilation</label><br>
+        <input type="radio" name="window_condition" value="Cross ventilation" class="checkbox" id="window_cross">
+        <label for="window_cross">Cross ventilation</label><br>
 
-        <input type="radio" name="window_condition" value="Mosquito net" class="checkbox">
-        <label>Mosquito net</label><br>
+        <input type="radio" name="window_condition" value="Mosquito net" class="checkbox" id="window_mosquito">
+        <label for="window_mosquito">Mosquito net</label><br>
 
-        <input type="radio" name="window_condition" value="Burglary Proof" class="checkbox">
-        <label>Burglary Proof</label><br>
+        <input type="radio" name="window_condition" value="Burglary Proof" class="checkbox" id="window_burglary">
+        <label for="window_burglary">Burglary Proof</label><br>
 
-        <input type="radio" name="window_condition" value="Other" class="checkbox">
-        <label>Other</label><br><br>
+        <input type="radio" name="window_condition" value="Other" class="checkbox" id="window_other">
+        <label for="window_other">Other</label><br><br>
 
         <div class="np">
           <div class="previous"><button type="button">Previous</button></div><br>
@@ -174,44 +174,44 @@
         <h2>Facilities and Amenities</h2>
 
         <label>Electricity Availability</label><br><br>
-        <input type="radio" name="electricity" value="Stable" class="checkbox">
-        <label>Stable</label><br>
+        <input type="radio" name="electricity" value="Stable" class="checkbox" id="elec_stable">
+        <label for="elec_stable">Stable</label><br>
 
-        <input type="radio" name="electricity" value="Unstable" class="checkbox">
-        <label>Unstable</label><br>
+        <input type="radio" name="electricity" value="Unstable" class="checkbox" id="elec_unstable">
+        <label for="elec_unstable">Unstable</label><br>
 
-        <input type="radio" name="electricity" value="None" class="checkbox">
-        <label>None</label><br><br>
+        <input type="radio" name="electricity" value="None" class="checkbox" id="elec_none">
+        <label for="elec_none">None</label><br><br>
 
         <hr>
 
         <label>Water Supply Type</label><br><br>
-        <input type="radio" name="water_supply" value="Borehole" class="checkbox">
-        <label>Borehole</label><br>
+        <input type="radio" name="water_supply" value="Borehole" class="checkbox" id="water_borehole">
+        <label for="water_borehole">Borehole</label><br>
 
-        <input type="radio" name="water_supply" value="Well" class="checkbox">
-        <label>Well</label><br>
+        <input type="radio" name="water_supply" value="Well" class="checkbox" id="water_well">
+        <label for="water_well">Well</label><br>
 
-        <input type="radio" name="water_supply" value="Tap Water" class="checkbox">
-        <label>Tap Water</label><br>
+        <input type="radio" name="water_supply" value="Tap Water" class="checkbox" id="water_tap">
+        <label for="water_tap">Tap Water</label><br>
 
-        <input type="radio" name="water_supply" value="None" class="checkbox">
-        <label>None</label><br><br>
+        <input type="radio" name="water_supply" value="None" class="checkbox" id="water_none">
+        <label for="water_none">None</label><br><br>
 
         <hr>
 
         <label>Waste Disposal System</label><br><br>
-        <input type="radio" name="waste_disposal" value="Public collection" class="checkbox">
-        <label>Public collection</label><br>
+        <input type="radio" name="waste_disposal" value="Public collection" class="checkbox" id="waste_public">
+        <label for="waste_public">Public collection</label><br>
 
-        <input type="radio" name="waste_disposal" value="Private service" class="checkbox">
-        <label>Private service</label><br>
+        <input type="radio" name="waste_disposal" value="Private service" class="checkbox" id="waste_private">
+        <label for="waste_private">Private service</label><br>
 
-        <input type="radio" name="waste_disposal" value="Dump site" class="checkbox">
-        <label>Dump site</label><br>
+        <input type="radio" name="waste_disposal" value="Dump site" class="checkbox" id="waste_dump">
+        <label for="waste_dump">Dump site</label><br>
 
-        <input type="radio" name="waste_disposal" value="Burning" class="checkbox">
-        <label>Burning</label><br><br>
+        <input type="radio" name="waste_disposal" value="Burning" class="checkbox" id="waste_burning">
+        <label for="waste_burning">Burning</label><br><br>
 
         <div class="np">
           <div class="previous"><button type="button">Previous</button></div><br>
@@ -224,37 +224,37 @@
         <h2>Safety and Security</h2>
 
         <label>Neighborhood Safety</label><br><br>
-        <input type="radio" name="neighborhood_safety" value="Very safe" class="checkbox">
-        <label>Very safe</label><br>
+        <input type="radio" name="neighborhood_safety" value="Very safe" class="checkbox" id="safety_very">
+        <label for="safety_very">Very safe</label><br>
 
-        <input type="radio" name="neighborhood_safety" value="Moderately safe" class="checkbox">
-        <label>Moderately safe</label><br>
+        <input type="radio" name="neighborhood_safety" value="Moderately safe" class="checkbox" id="safety_moderate">
+        <label for="safety_moderate">Moderately safe</label><br>
 
-        <input type="radio" name="neighborhood_safety" value="Unsafe" class="checkbox">
-        <label>Unsafe</label><br><br>
+        <input type="radio" name="neighborhood_safety" value="Unsafe" class="checkbox" id="safety_unsafe">
+        <label for="safety_unsafe">Unsafe</label><br><br>
 
         <hr>
 
         <label>Presence of Security Measures</label><br><br>
-        <input type="checkbox" name="security_measures[]" value="Fenced compound" class="checkbox">
-        <label>Fenced compound</label><br>
+        <input type="checkbox" name="security_measures[]" value="Fenced compound" class="checkbox" id="sec_fenced">
+        <label for="sec_fenced">Fenced compound</label><br>
 
-        <input type="checkbox" name="security_measures[]" value="Security guard" class="checkbox">
-        <label>Security guard</label><br>
+        <input type="checkbox" name="security_measures[]" value="Security guard" class="checkbox" id="sec_guard">
+        <label for="sec_guard">Security guard</label><br>
 
-        <input type="checkbox" name="security_measures[]" value="CCTV" class="checkbox">
-        <label>CCTV</label><br>
+        <input type="checkbox" name="security_measures[]" value="CCTV" class="checkbox" id="sec_cctv">
+        <label for="sec_cctv">CCTV</label><br>
 
-        <input type="checkbox" name="security_measures[]" value="Street light" class="checkbox">
-        <label>Street light</label><br>
+        <input type="checkbox" name="security_measures[]" value="Street light" class="checkbox" id="sec_light">
+        <label for="sec_light">Street light</label><br>
 
-        <input type="checkbox" name="security_measures[]" value="Neighborhood watch" class="checkbox">
-        <label>Neighborhood watch</label><br><br>
+        <input type="checkbox" name="security_measures[]" value="Neighborhood watch" class="checkbox" id="sec_watch">
+        <label for="sec_watch">Neighborhood watch</label><br><br>
 
         <hr>
 
-        <label>Accessibility to Road (Short answer)</label><br>
-        <input type="text" name="road_accessibility" id="text"><br><br>
+        <label for="road_accessibility">Accessibility to Road (Short answer)</label><br>
+        <input type="text" name="road_accessibility" id="road_accessibility"><br><br>
 
         <div class="np">
           <div class="previous"><button type="button">Previous</button></div><br>
@@ -267,38 +267,38 @@
         <h2>Environment and Surrounding</h2>
 
         <label>Noise Level</label><br><br>
-        <input type="radio" name="noise_level" value="Quiet" class="checkbox">
-        <label>Quiet</label><br>
+        <input type="radio" name="noise_level" value="Quiet" class="checkbox" id="noise_quiet">
+        <label for="noise_quiet">Quiet</label><br>
 
-        <input type="radio" name="noise_level" value="Moderate" class="checkbox">
-        <label>Moderate</label><br>
+        <input type="radio" name="noise_level" value="Moderate" class="checkbox" id="noise_moderate">
+        <label for="noise_moderate">Moderate</label><br>
 
-        <input type="radio" name="noise_level" value="Noisy" class="checkbox">
-        <label>Noisy</label><br><br>
+        <input type="radio" name="noise_level" value="Noisy" class="checkbox" id="noise_noisy">
+        <label for="noise_noisy">Noisy</label><br><br>
 
         <hr>
 
         <label>Drainage Condition</label><br><br>
-        <input type="radio" name="drainage_condition" value="Good" class="checkbox">
-        <label>Good</label><br>
+        <input type="radio" name="drainage_condition" value="Good" class="checkbox" id="drain_good">
+        <label for="drain_good">Good</label><br>
 
-        <input type="radio" name="drainage_condition" value="Blocked" class="checkbox">
-        <label>Blocked</label><br>
+        <input type="radio" name="drainage_condition" value="Blocked" class="checkbox" id="drain_blocked">
+        <label for="drain_blocked">Blocked</label><br>
 
-        <input type="radio" name="drainage_condition" value="No drainage" class="checkbox">
-        <label>No drainage</label><br><br>
+        <input type="radio" name="drainage_condition" value="No drainage" class="checkbox" id="drain_none">
+        <label for="drain_none">No drainage</label><br><br>
 
         <hr>
 
         <label>Proximity to Market/Bus Stop</label><br><br>
-        <input type="radio" name="proximity" value="Very close" class="checkbox">
-        <label>Very close</label><br>
+        <input type="radio" name="proximity" value="Very close" class="checkbox" id="prox_close">
+        <label for="prox_close">Very close</label><br>
 
-        <input type="radio" name="proximity" value="Moderate distance" class="checkbox">
-        <label>Moderate distance</label><br>
+        <input type="radio" name="proximity" value="Moderate distance" class="checkbox" id="prox_moderate">
+        <label for="prox_moderate">Moderate distance</label><br>
 
-        <input type="radio" name="proximity" value="Far" class="checkbox">
-        <label>Far</label><br><br>
+        <input type="radio" name="proximity" value="Far" class="checkbox" id="prox_far">
+        <label for="prox_far">Far</label><br><br>
 
         <div class="np">
           <div class="previous"><button type="button">Previous</button></div><br>
@@ -311,32 +311,32 @@
         <h2>Transportation and Accessibility</h2>
 
         <label>Primary Mode of Transportation</label><br><br>
-        <input type="radio" name="transport_mode" value="Walking" class="checkbox">
-        <label>Walking</label><br>
+        <input type="radio" name="transport_mode" value="Walking" class="checkbox" id="trans_walk">
+        <label for="trans_walk">Walking</label><br>
 
-        <input type="radio" name="transport_mode" value="Motorcycle" class="checkbox">
-        <label>Motorcycle</label><br>
+        <input type="radio" name="transport_mode" value="Motorcycle" class="checkbox" id="trans_motor">
+        <label for="trans_motor">Motorcycle</label><br>
 
-        <input type="radio" name="transport_mode" value="Tricycle" class="checkbox">
-        <label>Tricycle</label><br>
+        <input type="radio" name="transport_mode" value="Tricycle" class="checkbox" id="trans_tri">
+        <label for="trans_tri">Tricycle</label><br>
 
-        <input type="radio" name="transport_mode" value="Bus/Taxi" class="checkbox">
-        <label>Bus/Taxi</label><br>
+        <input type="radio" name="transport_mode" value="Bus/Taxi" class="checkbox" id="trans_bus">
+        <label for="trans_bus">Bus/Taxi</label><br>
 
-        <input type="radio" name="transport_mode" value="Private car" class="checkbox">
-        <label>Private car</label><br><br>
+        <input type="radio" name="transport_mode" value="Private car" class="checkbox" id="trans_car">
+        <label for="trans_car">Private car</label><br><br>
 
         <hr>
 
         <label>Road Condition</label><br><br>
-        <input type="radio" name="road_condition" value="Good" class="checkbox">
-        <label>Good</label><br>
+        <input type="radio" name="road_condition" value="Good" class="checkbox" id="road_good">
+        <label for="road_good">Good</label><br>
 
-        <input type="radio" name="road_condition" value="Fair" class="checkbox">
-        <label>Fair</label><br>
+        <input type="radio" name="road_condition" value="Fair" class="checkbox" id="road_fair">
+        <label for="road_fair">Fair</label><br>
 
-        <input type="radio" name="road_condition" value="Bad" class="checkbox">
-        <label>Bad</label><br><br>
+        <input type="radio" name="road_condition" value="Bad" class="checkbox" id="road_bad">
+        <label for="road_bad">Bad</label><br><br>
 
         <div class="np">
           <div class="previous"><button type="button">Previous</button></div><br>
@@ -349,32 +349,32 @@
         <h2>Social and Community</h2>
 
         <label>Community Relationship</label><br><br>
-        <input type="radio" name="community_relationship" value="Very friendly" class="checkbox">
-        <label>Very friendly</label><br>
+        <input type="radio" name="community_relationship" value="Very friendly" class="checkbox" id="comm_friendly">
+        <label for="comm_friendly">Very friendly</label><br>
 
-        <input type="radio" name="community_relationship" value="Moderate" class="checkbox">
-        <label>Moderate</label><br>
+        <input type="radio" name="community_relationship" value="Moderate" class="checkbox" id="comm_moderate">
+        <label for="comm_moderate">Moderate</label><br>
 
-        <input type="radio" name="community_relationship" value="Unfriendly" class="checkbox">
-        <label>Unfriendly</label><br><br>
+        <input type="radio" name="community_relationship" value="Unfriendly" class="checkbox" id="comm_unfriendly">
+        <label for="comm_unfriendly">Unfriendly</label><br><br>
 
         <hr>
 
         <label>Community Development Associations (CDA)</label><br><br>
-        <input type="radio" name="cda_presence" value="Yes" class="checkbox">
-        <label>Yes</label><br>
+        <input type="radio" name="cda_presence" value="Yes" class="checkbox" id="cda_yes">
+        <label for="cda_yes">Yes</label><br>
 
-        <input type="radio" name="cda_presence" value="No" class="checkbox">
-        <label>No</label><br><br>
+        <input type="radio" name="cda_presence" value="No" class="checkbox" id="cda_no">
+        <label for="cda_no">No</label><br><br>
 
         <hr>
 
         <label>Does the community organize regular meetings?</label><br><br>
-        <input type="radio" name="community_meetings" value="Yes" class="checkbox">
-        <label>Yes</label><br>
+        <input type="radio" name="community_meetings" value="Yes" class="checkbox" id="meet_yes">
+        <label for="meet_yes">Yes</label><br>
 
-        <input type="radio" name="community_meetings" value="No" class="checkbox">
-        <label>No</label><br><br>
+        <input type="radio" name="community_meetings" value="No" class="checkbox" id="meet_no">
+        <label for="meet_no">No</label><br><br>
 
         <div class="np">
           <div class="previous"><button type="button">Previous</button></div><br>
@@ -438,8 +438,11 @@ yesButton.addEventListener("click", (e) => {
     });
 
     if (!allFilled) {
-        alert("Please fill all required fields before continuing.");
-        return; // Stop: do NOT move to next step
+      const msgDiv = document.getElementById('error');
+      msgDiv.textContent = "Please fill all required fields before continuing.";
+      msgDiv.style.display = 'block';
+      setTimeout(() => { msgDiv.style.display = 'none'; }, 4000);
+      return; // Stop: do NOT move to next step
     }
 
     // All good → move to next step
@@ -485,8 +488,11 @@ submitBtn.addEventListener('click', async (e) => {
     const email = (document.getElementById('email').value || '').trim();
 
     if (!name || !email) {
-        alert('Please provide name and email before submitting.');
-        return;
+      const msgDiv = document.getElementById('error');
+      msgDiv.textContent = 'Please provide name and email before submitting.';
+      msgDiv.style.display = 'block';
+      setTimeout(() => { msgDiv.style.display = 'none'; }, 4000);
+      return;
     }
 
     // Collect all inputs (text, radio, checkbox, select) into a single object
@@ -605,7 +611,10 @@ submitBtn.addEventListener('click', async (e) => {
             }
             dbg.textContent = JSON.stringify(diag, null, 2);
 
-            alert('Please provide name and email before submitting. See debug panel for details.');
+            const msgDiv = document.getElementById('error');
+            msgDiv.textContent = 'Please provide name and email before submitting. See debug panel for details.';
+            msgDiv.style.display = 'block';
+            setTimeout(() => { msgDiv.style.display = 'none'; }, 4000);
             // focus the missing input if possible
             if (!data.name) document.getElementById('name')?.focus();
             else if (!data.email) document.getElementById('email')?.focus();
@@ -630,21 +639,32 @@ submitBtn.addEventListener('click', async (e) => {
         }
 
         if (response.ok) {
-            // show a quick success and redirect
-            alert('✅ Survey submitted successfully!');
+          // show a quick success and redirect
+          const msgDiv = document.getElementById('message');
+          msgDiv.textContent = '✅ Survey submitted successfully!';
+          msgDiv.style.display = 'block';
+          setTimeout(() => {
+            msgDiv.style.display = 'none';
             const thankyouUrl = (apiBase || '') + '/thankyou.html' + (ref ? `?ref=${encodeURIComponent(ref)}` : '');
             window.location.href = thankyouUrl;
+          }, 2000);
         } else {
-            // Show status and server message for easier debugging
-            const serverMsg = result && result.message ? result.message : text || response.statusText;
-            alert('❌ Error: ' + serverMsg + ' (HTTP ' + response.status + ')');
-            console.error('Server response', { status: response.status, body: text, parsed: result });
+          // Show status and server message for easier debugging
+          const serverMsg = result && result.message ? result.message : text || response.statusText;
+          const msgDiv = document.getElementById('error');
+          msgDiv.textContent = '❌ Error: ' + serverMsg + ' (HTTP ' + response.status + ')';
+          msgDiv.style.display = 'block';
+          setTimeout(() => { msgDiv.style.display = 'none'; }, 4000);
+          console.error('Server response', { status: response.status, body: text, parsed: result });
         }
     } catch (error) {
-        console.error('Error submitting form:', error);
-        alert('⚠️ Failed to connect to server.');
+      console.error('Error submitting form:', error);
+      const msgDiv = document.getElementById('error');
+      msgDiv.textContent = '⚠️ Failed to connect to server.';
+      msgDiv.style.display = 'block';
+      setTimeout(() => { msgDiv.style.display = 'none'; }, 4000);
     } finally {
-        submitBtn.disabled = false;
+      submitBtn.disabled = false;
     }
 });
 
