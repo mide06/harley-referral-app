@@ -1,7 +1,7 @@
 require("dotenv").config()
 const express = require("express");
 const bcrypt = require("bcrypt");
-const User = require("../models/user_temp");
+const User = require("../models/user");
 const appUrl = process.env.APP_URL
 const router = express.Router();
 
