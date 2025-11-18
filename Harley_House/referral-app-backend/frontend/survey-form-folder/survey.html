@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="img1.png" href="favicon.png">
     <title>harlay hub</title>
-    <!-- Optional: set backend API base here to override auto-detection. Example: http://localhost:3000 -->
+    <!-- Optional: set backend API base here to override auto-detection. Example: https://harley-referral-app.onrender.com -->
     <meta name="api-base" content="">
     <link rel="stylesheet" href="./sur.css">
 
@@ -555,17 +555,17 @@ submitBtn.addEventListener('click', async (e) => {
     try {
         submitBtn.disabled = true;
         // Determine API endpoint. If the current page origin is not the backend (port 3000),
-        // point requests at localhost:3000 where the Express API runs.
-        // Allow overriding API base via meta tag <meta name="api-base" content="http://localhost:3000">
+        // point requests at https://harley-referral-app.onrender.com where the Express API runs.
+        // Allow overriding API base via meta tag <meta name="api-base" content="https://harley-referral-app.onrender.com">
         const metaApi = document.querySelector('meta[name="api-base"]')?.getAttribute('content')?.trim();
         let apiBase = '';
         if (metaApi) {
             apiBase = metaApi.replace(/\/$/, ''); // strip trailing slash
         } else {
-            // Default: if the page is served from backend (port 3000), use relative path; otherwise point to localhost:3000
+            // Default: if the page is served from backend (port 3000), use relative path; otherwise point to https://harley-referral-app.onrender.com
             apiBase = ((window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') && window.location.port === '3000')
                 ? ''
-                : 'http://localhost:3000';
+                : 'https://harley-referral-app.onrender.com';
         }
 
         const apiUrl = apiBase + '/api/form/submit';

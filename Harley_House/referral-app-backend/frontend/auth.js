@@ -1,7 +1,7 @@
 // ======== auth.js ========
 
 // ✅ Backend API URL
-const BASE_URL = "http://localhost:3000/api/auth"; 
+const BASE_URL = "https://harley-referral-app.onrender.com/api/auth"; 
 
 // Helper: show inline input errors
 function showError(input, message) {
